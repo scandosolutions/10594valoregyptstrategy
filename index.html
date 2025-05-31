@@ -3,1376 +3,361 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valor Training & Consulting - Brand Identity System</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Valor Egypt & VIGAC - 9-Month Transformation Roadmap (Scando Method)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Enhanced Color System */
-        :root {
-            /* Primary Palette - Valor Purple Family */
-            --valor-purple-50: #faf7ff;
-            --valor-purple-100: #f3ebff;
-            --valor-purple-200: #e9d5ff;
-            --valor-purple-300: #d8b4fe;
-            --valor-purple-400: #c084fc;
-            --valor-purple-500: #a855f7;
-            --valor-purple-600: #9333ea;
-            --valor-purple-700: #7c2d12;
-            --valor-purple-800: #6b21a8;
-            --valor-purple-900: #581c87;
-            --valor-purple-950: #3b0764;
-            
-            /* Signature Valor Colors */
-            --valor-primary: #AA02A2;
-            --valor-primary-light: #C759C7;
-            --valor-primary-dark: #86017F;
-            --valor-secondary: #DAA9FF;
-            --valor-secondary-dark: #B887E6;
-            --valor-accent: #502F41;
-            --valor-accent-light: #6B3E56;
-            
-            /* Extended Neutral Palette */
-            --neutral-50: #fafafa;
-            --neutral-100: #f5f5f5;
-            --neutral-200: #e5e5e5;
-            --neutral-300: #d4d4d4;
-            --neutral-400: #a3a3a3;
-            --neutral-500: #737373;
-            --neutral-600: #525252;
-            --neutral-700: #404040;
-            --neutral-800: #262626;
-            --neutral-900: #171717;
-            --neutral-950: #0a0a0a;
-            
-            /* Semantic Colors */
-            --success-50: #f0fdf4;
-            --success-500: #22c55e;
-            --success-600: #16a34a;
-            --warning-50: #fffbeb;
-            --warning-500: #f59e0b;
-            --warning-600: #d97706;
-            --error-50: #fef2f2;
-            --error-500: #ef4444;
-            --error-600: #dc2626;
-            --info-50: #eff6ff;
-            --info-500: #3b82f6;
-            --info-600: #2563eb;
-            
-            /* Gradient Definitions */
-            --gradient-primary: linear-gradient(135deg, var(--valor-primary) 0%, var(--valor-primary-light) 100%);
-            --gradient-secondary: linear-gradient(135deg, var(--valor-secondary) 0%, var(--neutral-50) 100%);
-            --gradient-accent: linear-gradient(135deg, var(--valor-accent) 0%, var(--valor-accent-light) 100%);
-            --gradient-hero: linear-gradient(135deg, var(--valor-purple-50) 0%, var(--valor-secondary) 30%, var(--neutral-50) 100%);
-            
-            /* Spacing System */
-            --space-1: 0.25rem;
-            --space-2: 0.5rem;
-            --space-3: 0.75rem;
-            --space-4: 1rem;
-            --space-5: 1.25rem;
-            --space-6: 1.5rem;
-            --space-8: 2rem;
-            --space-10: 2.5rem;
-            --space-12: 3rem;
-            --space-16: 4rem;
-            --space-20: 5rem;
-            --space-24: 6rem;
-            
-            /* Typography Scale */
-            --text-xs: 0.75rem;
-            --text-sm: 0.875rem;
-            --text-base: 1rem;
-            --text-lg: 1.125rem;
-            --text-xl: 1.25rem;
-            --text-2xl: 1.5rem;
-            --text-3xl: 1.875rem;
-            --text-4xl: 2.25rem;
-            --text-5xl: 3rem;
-            --text-6xl: 3.75rem;
-            --text-7xl: 4.5rem;
-            
-            /* Shadows */
-            --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-            --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-            
-            /* Border Radius */
-            --radius-sm: 0.375rem;
-            --radius-md: 0.5rem;
-            --radius-lg: 0.75rem;
-            --radius-xl: 1rem;
-            --radius-2xl: 1.5rem;
-            --radius-full: 9999px;
-            
-            /* Transitions */
-            --transition-fast: 150ms ease;
-            --transition-base: 250ms ease;
-            --transition-slow: 350ms ease;
-        }
-
-        /* Reset & Base */
-        * {
+        body {
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #F8F9FA; /* Lighter, neutral background */
+            color: #343A40; /* Darker grey for main text */
         }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 5rem;
+        .infographic-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #FFFFFF;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
         }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--neutral-800);
-            background-color: var(--neutral-50);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+        .main-header {
+            text-align: center;
+            padding: 25px 0 35px 0;
+            border-bottom: 5px solid #006064; /* Scando Dark Teal */
+            margin-bottom: 40px;
         }
-
-        /* Typography System */
-        .font-display {
-            font-family: 'Playfair Display', serif;
-        }
-
-        .font-body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .font-arabic {
-            font-family: 'Cairo', 'Tajawal', sans-serif;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            line-height: 1.2;
-            letter-spacing: -0.025em;
-        }
-
-        h1 {
-            font-size: clamp(var(--text-4xl), 6vw, var(--text-7xl));
-            font-weight: 800;
-        }
-
-        h2 {
-            font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
+        .main-header h1 {
+            color: #006064; /* Scando Dark Teal */
+            font-size: 2.5em; /* Slightly adjusted */
+            margin: 0 0 12px 0;
             font-weight: 700;
         }
-
-        h3 {
-            font-size: clamp(var(--text-2xl), 3vw, var(--text-3xl));
-            font-weight: 600;
+        .main-header p {
+            color: #00838F; /* Scando Medium Teal */
+            font-size: 1.25em; /* Slightly adjusted */
+            margin: 0;
+            font-style: normal; /* Less italic, more professional */
+            font-weight: 400;
         }
-
-        p {
-            font-size: var(--text-lg);
+        .introduction {
+            background-color: #E0F7FA; /* Scando Light Cyan/Teal */
+            padding: 25px;
+            margin-bottom: 35px;
+            border-radius: 8px;
+            border-left: 6px solid #00838F; /* Scando Medium Teal */
+        }
+        .introduction p {
+            margin: 0;
             line-height: 1.7;
-            color: var(--neutral-600);
-            max-width: 65ch;
+            color: #004D40; /* Darker Teal for text on light bg */
+            font-size: 1.05em;
         }
-
-        /* Layout Components */
-        .container {
-            width: 100%;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 var(--space-6);
+        .quarter {
+            margin-bottom: 40px;
+            border: 1px solid #DDE2E5; /* Lighter, softer border */
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #FFFFFF;
         }
-
-        .section {
-            padding: var(--space-24) 0;
-            position: relative;
-        }
-
-        .grid {
-            display: grid;
-            gap: var(--space-8);
-        }
-
-        .grid-2 {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        }
-
-        .grid-3 {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-
-        .grid-4 {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
-
-        /* Navigation */
-        .nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--neutral-200);
-            z-index: 1000;
-            transition: var(--transition-base);
-        }
-
-        .nav-container {
+        .quarter-title-container {
+            background-color: #006064; /* Scando Dark Teal */
+            color: #FFFFFF;
+            padding: 18px 25px;
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            align-items: center;
-            padding: var(--space-4) 0;
         }
-
-        .nav-logo {
-            display: flex;
-            align-items: center;
-            gap: var(--space-3);
-            text-decoration: none;
+        .quarter-name {
+            font-size: 1.7em; /* More prominent */
+            font-weight: 600;
+            margin: 0;
         }
-
-        .nav-logo img {
-            height: 32px;
-            width: auto;
+        .quarter-dates {
+            font-size: 1em;
+            font-weight: 400;
         }
-
-        .nav-logo-text {
-            font-family: 'Playfair Display', serif;
+        .quarter-content {
+            padding: 30px;
+        }
+        .quarter-section {
+            margin-bottom: 30px;
+        }
+        .quarter-section:last-child {
+            margin-bottom: 10px; /* Reduced margin for last section */
+        }
+        .quarter-section h3 {
+            color: #006064; /* Scando Dark Teal */
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #00838F; /* Scando Medium Teal */
+            font-weight: 600;
+        }
+        .initiative-domain {
+            font-size: 0.9em;
+            font-weight: 600; /* Bolder */
+            color: #004D40; /* Darker Teal */
+            margin-bottom: 12px;
+            display: inline-block; /* Allows padding to work well */
+            background-color: #B2DFDB; /* Lighter Teal background for domain */
+            padding: 6px 12px;
+            border-radius: 20px; /* Pill shape */
+        }
+        .initiative-company-tag {
+            font-size: 0.8em;
             font-weight: 700;
-            font-size: var(--text-xl);
-            color: var(--valor-primary);
+            color: #FFFFFF;
+            margin-left: 10px;
+            display: inline-block;
+            background-color: #FF8F00; /* Amber for VIGAC tag */
+            padding: 4px 10px;
+            border-radius: 15px;
+            vertical-align: middle;
         }
-
-        .nav-links {
-            display: flex;
-            gap: var(--space-8);
+        .quarter-section ul {
             list-style: none;
-            align-items: center;
+            padding-left: 5px; /* Slight indent for the whole list */
         }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--neutral-700);
-            font-weight: 500;
-            font-size: var(--text-sm);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: var(--transition-fast);
+        .quarter-section li {
+            padding: 10px 0 10px 30px; /* Increased padding */
             position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--gradient-primary);
-            transition: var(--transition-fast);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .nav-links a:hover {
-            color: var(--valor-primary);
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            background: var(--gradient-hero);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 60%;
-            height: 100%;
-            background: radial-gradient(ellipse at center, var(--valor-secondary) 0%, transparent 70%);
-            opacity: 0.3;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            padding: var(--space-2) var(--space-4);
-            background: var(--neutral-50);
-            border: 1px solid var(--neutral-200);
-            border-radius: var(--radius-full);
-            font-size: var(--text-sm);
-            font-weight: 500;
-            color: var(--valor-primary);
-            margin-bottom: var(--space-6);
-        }
-
-        .hero-title {
-            margin-bottom: var(--space-6);
-            background: linear-gradient(135deg, var(--valor-primary) 0%, var(--valor-accent) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-subtitle {
-            font-size: var(--text-xl);
-            color: var(--neutral-600);
-            margin-bottom: var(--space-8);
-            max-width: 60ch;
-        }
-
-        .hero-logo {
-            position: absolute;
-            top: var(--space-8);
-            right: var(--space-8);
-            width: 120px;
-            height: auto;
-            opacity: 0.1;
-        }
-
-        /* Section Headers */
-        .section-header {
-            text-align: center;
-            margin-bottom: var(--space-16);
-        }
-
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: var(--space-4);
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -var(--space-2);
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background: var(--gradient-primary);
-            border-radius: var(--radius-full);
-        }
-
-        .section-description {
-            font-size: var(--text-xl);
-            color: var(--neutral-600);
-            max-width: 70ch;
-            margin: 0 auto;
-        }
-
-        /* Enhanced Color Palette */
-        .color-system {
-            margin-top: var(--space-16);
-        }
-
-        .color-family {
-            margin-bottom: var(--space-16);
-        }
-
-        .color-family-title {
-            font-size: var(--text-2xl);
-            font-weight: 600;
-            margin-bottom: var(--space-6);
-            color: var(--neutral-800);
-        }
-
-        .color-scale {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: var(--space-4);
-            margin-bottom: var(--space-8);
-        }
-
-        .color-swatch {
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow-md);
-            transition: var(--transition-base);
-            background: var(--neutral-50);
-        }
-
-        .color-swatch:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-xl);
-        }
-
-        .color-preview {
-            height: 120px;
-            position: relative;
-            display: flex;
-            align-items: flex-end;
-            padding: var(--space-4);
-        }
-
-        .color-info {
-            padding: var(--space-4);
-            background: var(--neutral-50);
-        }
-
-        .color-name {
-            font-weight: 600;
-            font-size: var(--text-sm);
-            color: var(--neutral-800);
-            margin-bottom: var(--space-1);
-        }
-
-        .color-value {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: var(--text-xs);
-            color: var(--neutral-500);
-            margin-bottom: var(--space-1);
-        }
-
-        .color-usage {
-            font-size: var(--text-xs);
-            color: var(--neutral-400);
-        }
-
-        /* Primary Colors */
-        .valor-primary-50 { background-color: var(--valor-purple-50); color: var(--neutral-800); }
-        .valor-primary-100 { background-color: var(--valor-purple-100); color: var(--neutral-800); }
-        .valor-primary-200 { background-color: var(--valor-purple-200); color: var(--neutral-800); }
-        .valor-primary-300 { background-color: var(--valor-purple-300); color: var(--neutral-800); }
-        .valor-primary-400 { background-color: var(--valor-purple-400); color: var(--neutral-50); }
-        .valor-primary-500 { background-color: var(--valor-primary); color: var(--neutral-50); }
-        .valor-primary-600 { background-color: var(--valor-primary-dark); color: var(--neutral-50); }
-        .valor-primary-700 { background-color: var(--valor-purple-700); color: var(--neutral-50); }
-        .valor-primary-800 { background-color: var(--valor-purple-800); color: var(--neutral-50); }
-        .valor-primary-900 { background-color: var(--valor-purple-900); color: var(--neutral-50); }
-
-        /* Neutral Colors */
-        .neutral-50 { background-color: var(--neutral-50); color: var(--neutral-800); }
-        .neutral-100 { background-color: var(--neutral-100); color: var(--neutral-800); }
-        .neutral-200 { background-color: var(--neutral-200); color: var(--neutral-800); }
-        .neutral-300 { background-color: var(--neutral-300); color: var(--neutral-800); }
-        .neutral-400 { background-color: var(--neutral-400); color: var(--neutral-50); }
-        .neutral-500 { background-color: var(--neutral-500); color: var(--neutral-50); }
-        .neutral-600 { background-color: var(--neutral-600); color: var(--neutral-50); }
-        .neutral-700 { background-color: var(--neutral-700); color: var(--neutral-50); }
-        .neutral-800 { background-color: var(--neutral-800); color: var(--neutral-50); }
-        .neutral-900 { background-color: var(--neutral-900); color: var(--neutral-50); }
-
-        /* Semantic Colors */
-        .success-color { background-color: var(--success-500); color: var(--neutral-50); }
-        .warning-color { background-color: var(--warning-500); color: var(--neutral-50); }
-        .error-color { background-color: var(--error-500); color: var(--neutral-50); }
-        .info-color { background-color: var(--info-500); color: var(--neutral-50); }
-
-        /* Logo Guidelines */
-        .logo-showcase {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: var(--space-8);
-            margin-top: var(--space-12);
-        }
-
-        .logo-variant {
-            padding: var(--space-8);
-            border-radius: var(--radius-xl);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 200px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .logo-variant.light {
-            background: var(--neutral-50);
-            border: 2px solid var(--neutral-200);
-        }
-
-        .logo-variant.dark {
-            background: var(--valor-accent);
-        }
-
-        .logo-variant.gradient {
-            background: var(--gradient-secondary);
-        }
-
-        .logo-lockup {
-            display: flex;
-            align-items: center;
-            gap: var(--space-4);
-        }
-
-        .logo-icon {
-            height: 80px;
-            width: auto;
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-main {
-            font-family: 'Playfair Display', serif;
-            font-weight: 800;
-            font-size: var(--text-3xl);
-            line-height: 1;
-            letter-spacing: -0.02em;
-        }
-
-        .logo-tagline {
-            font-family: 'Inter', sans-serif;
-            font-weight: 500;
-            font-size: var(--text-xs);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-top: var(--space-1);
-        }
-
-        .logo-variant.light .logo-main {
-            color: var(--valor-primary);
-        }
-
-        .logo-variant.light .logo-tagline {
-            color: var(--neutral-600);
-        }
-
-        .logo-variant.dark .logo-main,
-        .logo-variant.dark .logo-tagline,
-        .logo-variant.gradient .logo-main,
-        .logo-variant.gradient .logo-tagline {
-            color: var(--neutral-50);
-        }
-
-        /* Typography Showcase */
-        .typography-grid {
-            display: grid;
-            gap: var(--space-12);
-            margin-top: var(--space-12);
-        }
-
-        .font-family {
-            padding: var(--space-8);
-            background: var(--neutral-50);
-            border-radius: var(--radius-xl);
-            border: 1px solid var(--neutral-200);
-        }
-
-        .font-family-name {
-            font-size: var(--text-xl);
-            font-weight: 700;
-            color: var(--valor-primary);
-            margin-bottom: var(--space-6);
-            padding-bottom: var(--space-2);
-            border-bottom: 2px solid var(--valor-secondary);
-            display: inline-block;
-        }
-
-        .font-samples {
-            display: grid;
-            gap: var(--space-6);
-        }
-
-        .font-sample {
-            padding: var(--space-4);
-            background: var(--neutral-50);
-            border-radius: var(--radius-md);
-            border-left: 4px solid var(--valor-secondary);
-        }
-
-        .font-weight-label {
-            font-size: var(--text-xs);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--neutral-500);
-            margin-bottom: var(--space-2);
-        }
-
-        /* Brand Applications */
-        .applications-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-8);
-            margin-top: var(--space-12);
-        }
-
-        .application-card {
-            background: var(--neutral-50);
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            box-shadow: var(--shadow-md);
-            transition: var(--transition-base);
-        }
-
-        .application-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-2xl);
-        }
-
-        .application-preview {
-            height: 240px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .application-info {
-            padding: var(--space-6);
-        }
-
-        .application-title {
-            font-size: var(--text-lg);
-            font-weight: 600;
-            color: var(--neutral-800);
-            margin-bottom: var(--space-2);
-        }
-
-        .application-description {
-            font-size: var(--text-sm);
-            color: var(--neutral-600);
-            line-height: 1.6;
-        }
-
-        /* Pattern Backgrounds */
-        .pattern-dots {
-            background-image: radial-gradient(var(--valor-secondary) 1px, transparent 1px);
-            background-size: 20px 20px;
-            background-color: var(--valor-purple-50);
-        }
-
-        .pattern-lines {
-            background: repeating-linear-gradient(
-                45deg,
-                var(--valor-secondary),
-                var(--valor-secondary) 2px,
-                transparent 2px,
-                transparent 20px
-            );
-            background-color: var(--valor-purple-50);
-        }
-
-        .pattern-gradient {
-            background: var(--gradient-secondary);
-        }
-
-        .pattern-mesh {
-            background: 
-                radial-gradient(circle at 25% 25%, var(--valor-secondary) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, var(--valor-primary-light) 0%, transparent 50%);
-            background-color: var(--valor-purple-50);
-        }
-
-        /* Brand Voice */
-        .voice-principles {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-8);
-            margin-top: var(--space-12);
-        }
-
-        .voice-principle {
-            padding: var(--space-8);
-            background: var(--neutral-50);
-            border-radius: var(--radius-xl);
-            border: 1px solid var(--neutral-200);
-            position: relative;
-        }
-
-        .voice-principle::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--gradient-primary);
-            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-        }
-
-        .voice-title {
-            font-size: var(--text-lg);
-            font-weight: 700;
-            color: var(--valor-primary);
-            margin-bottom: var(--space-3);
-        }
-
-        .voice-description {
-            font-size: var(--text-base);
-            color: var(--neutral-600);
             line-height: 1.7;
+            font-size: 1.05em; /* Slightly larger list item text */
+            color: #495057; /* Softer black for list items */
         }
-
-        /* Footer */
+        .quarter-section li::before {
+            content: ''; /* Custom bullet */
+            background-color: #00838F; /* Scando Medium Teal */
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            left: 5px;
+            top: 16px; /* Adjusted for larger line height */
+        }
+        .current-state {
+            background-color: #FFF8E1; /* Light Yellow/Cream for emphasis */
+            padding: 20px;
+            margin-bottom: 35px;
+            border-radius: 8px;
+            border-left: 6px solid #FFAB00; /* Amber accent */
+        }
+        .current-state h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #E65100; /* Darker Orange/Amber */
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        .current-state ul li::before {
+            background-color: #FFAB00; /* Amber accent for bullets */
+        }
         .footer {
-            background: var(--neutral-900);
-            color: var(--neutral-400);
-            padding: var(--space-16) 0 var(--space-8);
-            margin-top: var(--space-24);
-        }
-
-        .footer-content {
             text-align: center;
+            padding: 25px;
+            background-color: #004D40; /* Darker Scando Teal for footer */
+            color: #E0F2F1; /* Light Teal text on dark footer */
+            border-radius: 0 0 12px 12px; /* Match container radius */
+            margin-top: 40px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 1em;
+            font-weight: 400;
         }
 
-        .footer-logo {
-            margin-bottom: var(--space-6);
-        }
-
-        .footer-text {
-            font-size: var(--text-sm);
-            line-height: 1.6;
-            max-width: 60ch;
-            margin: 0 auto;
-        }
-
-        /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .hero {
-                min-height: 80vh;
-                text-align: center;
-            }
-            
-            .hero-logo {
-                display: none;
-            }
-            
-            .section {
-                padding: var(--space-16) 0;
-            }
-            
-            .color-scale {
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            }
-            
-            .logo-showcase {
-                grid-template-columns: 1fr;
-            }
+            .main-header h1 { font-size: 2.1em; }
+            .main-header p { font-size: 1.15em; }
+            .quarter-name { font-size: 1.4em; }
+            .quarter-section h3 { font-size: 1.3em; }
+            .infographic-container { padding: 20px; margin: 20px auto; }
         }
-
-        /* Scroll Progress */
-        .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 3px;
-            background: var(--gradient-primary);
-            z-index: 1001;
-            transition: width 0.1s ease;
-        }
-
-        /* Arabic Support */
-        .arabic {
-            direction: rtl;
-            font-family: 'Cairo', 'Tajawal', sans-serif;
-        }
-
-        .arabic h1, .arabic h2, .arabic h3, .arabic h4, .arabic h5, .arabic h6 {
-            font-family: 'Cairo', serif;
+         @media (max-width: 480px) {
+            .main-header h1 { font-size: 1.8em; }
+            .main-header p { font-size: 1em; }
+            .quarter-name { font-size: 1.2em; }
+            .quarter-dates { font-size: 0.9em;}
+            .quarter-section h3 { font-size: 1.15em; }
+            .quarter-section li { font-size: 0.95em; padding: 8px 0 8px 25px;}
+            .quarter-section li::before { top: 13px; width: 8px; height: 8px;}
+            .initiative-domain { font-size: 0.8em; padding: 5px 10px;}
+            .initiative-company-tag { font-size: 0.7em; padding: 3px 8px;}
         }
     </style>
 </head>
 <body>
-    <div class="scroll-progress" id="scrollProgress"></div>
-    
-    <nav class="nav">
-        <div class="container nav-container">
-            <a href="#hero" class="nav-logo">
-                <img src="https://i.ibb.co/RGpBz4hT/valor-main-icon-light-background.png" alt="Valor Logo">
-                <span class="nav-logo-text">VALOR</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#logo">Logo</a></li>
-                <li><a href="#colors">Colors</a></li>
-                <li><a href="#typography">Typography</a></li>
-                <li><a href="#applications">Applications</a></li>
-                <li><a href="#voice">Voice</a></li>
+
+    <div class="infographic-container">
+
+        <div class="main-header">
+            <h1>Valor Egypt & VIGAC: 9-Month Transformation Roadmap</h1>
+            <p>Leveraging the Scando Method for Operational Excellence (May 2025 - Jan 2026)</p>
+        </div>
+
+        <div class="introduction">
+            <p>This 9-month strategy, commencing May 1, 2025, outlines the digital transformation for Valor Egypt's training services and the operational launch of VIGAC's validation services. Applying the Scando Method, it focuses on optimizing operations and scaling capabilities through an integrated Odoo Enterprise solution, including a new premium AI research service for Valor Egypt.</p>
+        </div>
+
+        <div class="current-state">
+            <h4>Current Technology Snapshot (Valor Egypt Training Focus):</h4>
+            <ul>
+                <li>Odoo Community hosted on VPS (website & e-learning subscriptions).</li>
+                <li>Separate, non-integrated tool for e-learning course delivery and content management.</li>
+                <li>Absence of core Odoo modules for comprehensive training management.</li>
+                <li>Limited data centralization and manual processes for key training operations.</li>
             </ul>
         </div>
-    </nav>
 
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span>✨</span>
-                    Brand Identity System 2025
-                </div>
-                <h1 class="hero-title">
-                    VALOR Training & Consulting
-                </h1>
-                <p class="hero-subtitle">
-                    A comprehensive brand identity system that embodies excellence, growth, and forward-thinking solutions. This guide establishes the visual foundation for consistent and impactful brand communications.
-                </p>
+        <div class="quarter">
+            <div class="quarter-title-container">
+                <h2 class="quarter-name">Quarter 1: Foundation, Core Systems & Service Blueprinting</h2>
+                <span class="quarter-dates">May 1, 2025 - July 31, 2025</span>
             </div>
-        </div>
-        <img src="https://i.ibb.co/RGpBz4hT/valor-main-icon-light-background.png" alt="Valor Icon" class="hero-logo">
-    </section>
-
-    <section id="logo" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Logo System</h2>
-                <p class="section-description">
-                    The Valor logo is the cornerstone of our visual identity, representing strength, excellence, and professional growth. Our logo system provides flexibility while maintaining brand consistency.
-                </p>
-            </div>
-
-            <div class="logo-showcase">
-                <div class="logo-variant light">
-                    <div class="logo-lockup">
-                        <img src="https://i.ibb.co/RGpBz4hT/valor-main-icon-light-background.png" alt="Valor Icon" class="logo-icon">
-                        <div class="logo-text">
-                            <span class="logo-main">VALOR</span>
-                            <span class="logo-tagline">Training & Consulting</span>
-                        </div>
-                    </div>
+            <div class="quarter-content">
+                 <div class="quarter-section">
+                    <h3>Initiative 1: Odoo Enterprise Platform Upgrade & Hosting Setup</h3>
+                    <span class="initiative-domain">Infrastructure & Operations</span> <span class="initiative-company-tag">VALOR</span>
+                    <ul>
+                        <li>Procure and migrate Valor Egypt from Odoo Community to Odoo Enterprise Edition.</li>
+                        <li>Establish and configure the new, robust hosting environment for Odoo Enterprise.</li>
+                        <li>Ensure foundational security and backup protocols are in place for both Valor Egypt & VIGAC data.</li>
+                    </ul>
                 </div>
-                
-                <div class="logo-variant dark">
-                    <div class="logo-lockup">
-                        <img src="https://i.ibb.co/B5PY6w5N/valor-main-icon-dark-background.png" alt="Valor Icon Dark" class="logo-icon">
-                        <div class="logo-text">
-                            <span class="logo-main">VALOR</span>
-                            <span class="logo-tagline">Training & Consulting</span>
-                        </div>
-                    </div>
+                <div class="quarter-section">
+                    <h3>Initiative 2: Intensive Process Discovery (Valor Training & VIGAC Validation)</h3>
+                    <span class="initiative-domain">Business Process Management (Scando Phase 1)</span> <span class="initiative-company-tag">VALOR & VIGAC</span>
+                    <ul>
+                        <li><strong>Valor Training:</strong> Analyze end-to-end training processes (development, marketing, enrollment, delivery, certification). Map data flows. Define KPIs. Identify Odoo module requirements.</li>
+                        <li><strong>VIGAC Validation:</strong> Initial discovery for VIGAC's core validation services (CSV, Thermal Mapping, etc.). High-level process flows and system needs.</li>
+                    </ul>
                 </div>
-                
-                <div class="logo-variant gradient">
-                    <div class="logo-lockup">
-                        <img src="https://i.ibb.co/RGpBz4hT/valor-main-icon-light-background.png" alt="Valor Icon" class="logo-icon">
-                        <div class="logo-text">
-                            <span class="logo-main">VALOR</span>
-                            <span class="logo-tagline">Training & Consulting</span>
-                        </div>
-                    </div>
+                <div class="quarter-section">
+                    <h3>Initiative 3: Design & Blueprint "AI-Powered Research Assistant" Service</h3>
+                    <span class="initiative-domain">Manage Services Development Program</span> <span class="initiative-company-tag">VALOR</span>
+                    <ul>
+                        <li>Define service scope, target premium members, and value proposition for Valor Egypt's AI service.</li>
+                        <li>Identify and curate initial library of books/knowledge sources. Plan digitization/indexing.</li>
+                        <li>Specify AI requirements (NLP, search, referencing). Research AI technologies/APIs.</li>
+                        <li>Outline technical architecture, UI mockups, MVP features. Plan Odoo integration.</li>
+                    </ul>
                 </div>
-            </div>
-
-            <div style="margin-top: var(--space-16);">
-                <h3>Usage Guidelines</h3>
-                <div class="grid grid-2" style="margin-top: var(--space-8);">
-                    <div>
-                        <h4>Minimum Sizes</h4>
-                        <ul style="margin-top: var(--space-4); padding-left: var(--space-6);">
-                            <li>Digital: 60px wide (full lockup)</li>
-                            <li>Print: 20mm wide (full lockup)</li>
-                            <li>Icon only: 16px minimum</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Clear Space</h4>
-                        <ul style="margin-top: var(--space-4); padding-left: var(--space-6);">
-                            <li>Minimum clear space equals the height of the "V" icon</li>
-                            <li>Apply to all sides of the logo lockup</li>
-                            <li>Keep area free from other elements</li>
-                        </ul>
-                    </div>
+                <div class="quarter-section">
+                    <h3>Initiative 4: Core Odoo Modules for Valor Training (CRM, Sales, Basic Finance)</h3>
+                    <span class="initiative-domain">Deliver Services & Manage Financial Resources (Scando Phase 2 Start)</span> <span class="initiative-company-tag">VALOR</span>
+                    <ul>
+                        <li>Configure Odoo CRM for trainee and corporate client lifecycle management (Valor).</li>
+                        <li>Implement Odoo Sales for course catalog, quotations, and sales order management (Valor).</li>
+                        <li>Set up foundational Odoo Accounting (Chart of Accounts for training revenue/costs) (Valor).</li>
+                        <li>Integrate a secure Payment Gateway with Odoo Sales and Website for Valor's course payments.</li>
+                    </ul>
+                </div>
+                <div class="quarter-section">
+                    <h3>Initiative 5: Valor Training LMS Strategy & Content Centralization</h3>
+                    <span class="initiative-domain">Deliver Services & Knowledge Management (Scando Phase 2 & 3)</span> <span class="initiative-company-tag">VALOR</span>
+                    <ul>
+                        <li>Implement chosen LMS strategy for Valor: Migrate to Odoo LMS or complete deep integration of existing tool.</li>
+                        <li>Enhance Odoo website for Valor's dynamic course catalog, online registration, and LMS access.</li>
+                        <li>Begin populating Odoo knowledge base/DMS with Valor's training curricula, materials, ASQ guidelines.</li>
+                        <li>Migrate essential Valor trainee data, course details, and historical enrollment records.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="colors" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Color System</h2>
-                <p class="section-description">
-                    Our sophisticated color palette reflects professionalism, innovation, and trust. Each color has been carefully selected to work harmoniously across all brand applications.
-                </p>
+        <div class="quarter">
+            <div class="quarter-title-container">
+                <h2 class="quarter-name">Quarter 2: VIGAC Launch Prep, AI Dev & Org. Integration</h2>
+                <span class="quarter-dates">August 1, 2025 - October 31, 2025</span>
             </div>
-
-            <div class="color-system">
-                <div class="color-family">
-                    <h3 class="color-family-title">Primary Palette - Valor Purple</h3>
-                    <div class="color-scale">
-                        <div class="color-swatch">
-                            <div class="color-preview valor-primary-50"></div>
-                            <div class="color-info">
-                                <div class="color-name">Purple 50</div>
-                                <div class="color-value">#faf7ff</div>
-                                <div class="color-usage">Backgrounds, subtle accents</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview valor-primary-100"></div>
-                            <div class="color-info">
-                                <div class="color-name">Purple 100</div>
-                                <div class="color-value">#f3ebff</div>
-                                <div class="color-usage">Light backgrounds</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview valor-primary-200"></div>
-                            <div class="color-info">
-                                <div class="color-name">Purple 200</div>
-                                <div class="color-value">#e9d5ff</div>
-                                <div class="color-usage">Borders, dividers</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview valor-primary-300"></div>
-                            <div class="color-info">
-                                <div class="color-name">Purple 300</div>
-                                <div class="color-value">#d8b4fe</div>
-                                <div class="color-usage">Disabled states</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview valor-primary-400"></div>
-                            <div class="color-info">
-                                <div class="color-name">Purple 400</div>
-                                <div class="color-value">#c084fc</div>
-                                <div class="color-usage">Secondary actions</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview valor-primary-500"></div>
-                            <div class="color-info">
-                                <div class="color-name">Valor Primary</div>
-                                <div class="color-value">#AA02A2</div>
-                                <div class="color-usage">Primary brand color</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview valor-primary-600"></div>
-                            <div class="color-info">
-                                <div class="color-name">Purple 600</div>
-                                <div class="color-value">#86017F</div>
-                                <div class="color-usage">Hover states</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview valor-primary-700"></div>
-                            <div class="color-info">
-                                <div class="color-name">Purple 700</div>
-                                <div class="color-value">#7c2d12</div>
-                                <div class="color-usage">Active states</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview valor-primary-800"></div>
-                            <div class="color-info">
-                                <div class="color-name">Purple 800</div>
-                                <div class="color-value">#6b21a8</div>
-                                <div class="color-usage">Dark themes</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview valor-primary-900"></div>
-                            <div class="color-info">
-                                <div class="color-name">Purple 900</div>
-                                <div class="color-value">#581c87</div>
-                                <div class="color-usage">High contrast</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="quarter-content">
+                <div class="quarter-section">
+                    <h3>Initiative 6: Develop MVP for Valor's "AI-Powered Research Assistant"</h3>
+                    <span class="initiative-domain">Manage Services Development Program</span> <span class="initiative-company-tag">VALOR</span>
+                    <ul>
+                        <li>Build the core AI interface and backend logic for Valor's premium service.</li>
+                        <li>Integrate with the initial digitized book library/knowledge base.</li>
+                        <li>Develop user authentication and subscription management features within Odoo for Valor members.</li>
+                        <li>Conduct internal testing and refinement of Valor's AI assistant.</li>
+                    </ul>
                 </div>
-
-                <div class="color-family">
-                    <h3 class="color-family-title">Neutral Palette</h3>
-                    <div class="color-scale">
-                        <div class="color-swatch">
-                            <div class="color-preview neutral-50"></div>
-                            <div class="color-info">
-                                <div class="color-name">Neutral 50</div>
-                                <div class="color-value">#fafafa</div>
-                                <div class="color-usage">Page backgrounds</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview neutral-100"></div>
-                            <div class="color-info">
-                                <div class="color-name">Neutral 100</div>
-                                <div class="color-value">#f5f5f5</div>
-                                <div class="color-usage">Card backgrounds</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview neutral-200"></div>
-                            <div class="color-info">
-                                <div class="color-name">Neutral 200</div>
-                                <div class="color-value">#e5e5e5</div>
-                                <div class="color-usage">Borders</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview neutral-300"></div>
-                            <div class="color-info">
-                                <div class="color-name">Neutral 300</div>
-                                <div class="color-value">#d4d4d4</div>
-                                <div class="color-usage">Separators</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview neutral-400"></div>
-                            <div class="color-info">
-                                <div class="color-name">Neutral 400</div>
-                                <div class="color-value">#a3a3a3</div>
-                                <div class="color-usage">Placeholders</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview neutral-500"></div>
-                            <div class="color-info">
-                                <div class="color-name">Neutral 500</div>
-                                <div class="color-value">#737373</div>
-                                <div class="color-usage">Secondary text</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview neutral-600"></div>
-                            <div class="color-info">
-                                <div class="color-name">Neutral 600</div>
-                                <div class="color-value">#525252</div>
-                                <div class="color-usage">Body text</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview neutral-700"></div>
-                            <div class="color-info">
-                                <div class="color-name">Neutral 700</div>
-                                <div class="color-value">#404040</div>
-                                <div class="color-usage">Headings</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview neutral-800"></div>
-                            <div class="color-info">
-                                <div class="color-name">Neutral 800</div>
-                                <div class="color-value">#262626</div>
-                                <div class="color-usage">Primary text</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview neutral-900"></div>
-                            <div class="color-info">
-                                <div class="color-name">Neutral 900</div>
-                                <div class="color-value">#171717</div>
-                                <div class="color-usage">High contrast text</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="quarter-section">
+                    <h3>Initiative 7: Valor Training Digital Marketing & Sales Funnel Optimization</h3>
+                    <span class="initiative-domain">Market and Sell Products and Services</span> <span class="initiative-company-tag">VALOR</span>
+                    <ul>
+                        <li>Develop and launch targeted digital marketing campaigns for Valor's training programs using Odoo CRM insights.</li>
+                        <li>Optimize Valor's online course discovery, registration, and payment funnel on the Odoo website.</li>
+                        <li>Implement lead nurturing workflows in Odoo CRM for prospective Valor trainees and corporate clients.</li>
+                        <li>Conduct User Acceptance Testing (UAT) for all core Odoo training workflows for Valor.</li>
+                    </ul>
                 </div>
-
-                <div class="color-family">
-                    <h3 class="color-family-title">Semantic Colors</h3>
-                    <div class="color-scale">
-                        <div class="color-swatch">
-                            <div class="color-preview success-color"></div>
-                            <div class="color-info">
-                                <div class="color-name">Success</div>
-                                <div class="color-value">#22c55e</div>
-                                <div class="color-usage">Success states, confirmations</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview warning-color"></div>
-                            <div class="color-info">
-                                <div class="color-name">Warning</div>
-                                <div class="color-value">#f59e0b</div>
-                                <div class="color-usage">Warnings, cautions</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview error-color"></div>
-                            <div class="color-info">
-                                <div class="color-name">Error</div>
-                                <div class="color-value">#ef4444</div>
-                                <div class="color-usage">Errors, destructive actions</div>
-                            </div>
-                        </div>
-                        <div class="color-swatch">
-                            <div class="color-preview info-color"></div>
-                            <div class="color-info">
-                                <div class="color-name">Info</div>
-                                <div class="color-value">#3b82f6</div>
-                                <div class="color-usage">Information, links</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="quarter-section">
+                    <h3>Initiative 8: Streamlined Financial Management & Reporting (Valor & VIGAC Prep)</h3>
+                    <span class="initiative-domain">Manage Financial Resources</span> <span class="initiative-company-tag">VALOR & VIGAC</span>
+                    <ul>
+                        <li>Complete Odoo Invoicing and Accounting setup for Valor's training financial management.</li>
+                        <li>Configure advanced financial reports in Odoo for Valor's training programs. Develop KPI dashboards.</li>
+                        <li>Prepare Odoo Accounting structure for VIGAC (separate CoA if needed, cost centers).</li>
+                        <li>Initial Team Training for Valor on core financial and sales processes in Odoo (Scando Phase 4 Start).</li>
+                    </ul>
+                </div>
+                 <div class="quarter-section">
+                    <h3>Initiative 10: VIGAC Service Delivery Blueprint & Odoo Project Setup</h3>
+                    <span class="initiative-domain">Business Process Management & Deliver Services</span> <span class="initiative-company-tag">VIGAC</span>
+                    <ul>
+                        <li>Detailed process mapping for VIGAC validation services (CSV, Thermal Mapping, Compressed Systems, Steam, Calibration).</li>
+                        <li>Define standard project templates, deliverables, and reporting for VIGAC services.</li>
+                        <li>Configure Odoo Project module for VIGAC: stages, task management, resource allocation (Technical-Chemist Personnel), time tracking.</li>
+                        <li>Set up Odoo Sales & CRM for VIGAC client engagement, quoting validation projects, and service agreements.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="typography" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Typography</h2>
-                <p class="section-description">
-                    Our typography system combines elegance with readability, using carefully selected typefaces that reflect our brand's sophisticated and professional character.
-                </p>
+        <div class="quarter">
+            <div class="quarter-title-container">
+                <h2 class="quarter-name">Quarter 3: Full Enablement, Service Launches & Optimization</h2>
+                <span class="quarter-dates">November 1, 2025 - January 31, 2026</span>
             </div>
-
-            <div class="typography-grid">
-                <div class="font-family">
-                    <h3 class="font-family-name">Playfair Display - Display Typeface</h3>
-                    <div class="font-samples">
-                        <div class="font-sample">
-                            <div class="font-weight-label">Black 900</div>
-                            <h1 style="font-family: 'Playfair Display'; font-weight: 900; font-size: var(--text-5xl); margin: 0;">Excellence in Training</h1>
-                        </div>
-                        <div class="font-sample">
-                            <div class="font-weight-label">Bold 700</div>
-                            <h2 style="font-family: 'Playfair Display'; font-weight: 700; font-size: var(--text-3xl); margin: 0;">Professional Development</h2>
-                        </div>
-                        <div class="font-sample">
-                            <div class="font-weight-label">SemiBold 600</div>
-                            <h3 style="font-family: 'Playfair Display'; font-weight: 600; font-size: var(--text-2xl); margin: 0;">Strategic Consulting</h3>
-                        </div>
-                    </div>
-                    <p style="margin-top: var(--space-4); color: var(--neutral-600);">
-                        Used for headlines, titles, and brand statements that require elegance and impact. Playfair Display brings sophistication and gravitas to our communications.
-                    </p>
+            <div class="quarter-content">
+                <div class="quarter-section">
+                    <h3>Initiative 9: Comprehensive Team Enablement (Valor & VIGAC) & Valor AI Launch</h3>
+                    <span class="initiative-domain">Deliver Services & Operations (Scando Phase 4 & 5)</span> <span class="initiative-company-tag">VALOR & VIGAC</span>
+                    <ul>
+                        <li>Deliver in-depth, role-specific Odoo training to all Valor staff. Implement change management.</li>
+                        <li>Officially launch Valor's "AI-Powered Research Assistant" MVP to a pilot group of premium members; gather feedback.</li>
+                        <li>Formally "Go-Live" with the fully integrated Odoo Enterprise system for all Valor training operations.</li>
+                        <li>Provide intensive hyper-care support post-go-live for Valor. Finalize user documentation.</li>
+                    </ul>
                 </div>
-
-                <div class="font-family">
-                    <h3 class="font-family-name">Inter - Body Typeface</h3>
-                    <div class="font-samples">
-                        <div class="font-sample">
-                            <div class="font-weight-label">Bold 700</div>
-                            <p style="font-family: 'Inter'; font-weight: 700; font-size: var(--text-lg); margin: 0;">Inter Bold for emphasis and subheadings</p>
-                        </div>
-                        <div class="font-sample">
-                            <div class="font-weight-label">SemiBold 600</div>
-                            <p style="font-family: 'Inter'; font-weight: 600; font-size: var(--text-base); margin: 0;">Inter SemiBold for important information and labels</p>
-                        </div>
-                        <div class="font-sample">
-                            <div class="font-weight-label">Regular 400</div>
-                            <p style="font-family: 'Inter'; font-weight: 400; font-size: var(--text-base); margin: 0; line-height: 1.7;">Inter Regular is our primary typeface for body text, ensuring excellent readability across all platforms and sizes. It provides clarity and comfort for extended reading while maintaining a modern, professional appearance.</p>
-                        </div>
-                    </div>
-                    <p style="margin-top: var(--space-4); color: var(--neutral-600);">
-                        Our primary typeface for body text, navigation, and user interface elements. Inter ensures optimal readability and accessibility across all digital platforms.
-                    </p>
+                <div class="quarter-section">
+                    <h3>Initiative 11: VIGAC Knowledge Management & SOP Digitization</h3>
+                    <span class="initiative-domain">Knowledge Management & Quality Assurance</span> <span class="initiative-company-tag">VIGAC</span>
+                    <ul>
+                        <li>Develop and digitize Standard Operating Procedures (SOPs) for all VIGAC validation and calibration services within Odoo Documents/Knowledge.</li>
+                        <li>Create a centralized repository for VIGAC validation protocols, regulatory guidelines, and equipment calibration records.</li>
+                        <li>Integrate SOPs and templates into VIGAC's Odoo Project workflows.</li>
+                    </ul>
                 </div>
-
-                <div class="font-family arabic">
-                    <h3 class="font-family-name">Cairo & Tajawal - Arabic Typography</h3>
-                    <div class="font-samples">
-                        <div class="font-sample">
-                            <div class="font-weight-label">Cairo Black 900</div>
-                            <h2 style="font-family: 'Cairo'; font-weight: 900; font-size: var(--text-3xl); margin: 0; direction: rtl;">التدريب والاستشارات المهنية</h2>
-                        </div>
-                        <div class="font-sample">
-                            <div class="font-weight-label">Tajawal Bold 700</div>
-                            <h3 style="font-family: 'Tajawal'; font-weight: 700; font-size: var(--text-xl); margin: 0; direction: rtl;">تطوير المهارات والقدرات</h3>
-                        </div>
-                        <div class="font-sample">
-                            <div class="font-weight-label">Tajawal Regular 400</div>
-                            <p style="font-family: 'Tajawal'; font-weight: 400; font-size: var(--text-base); margin: 0; direction: rtl; line-height: 1.8;">نحن نقدم خدمات التدريب والاستشارات المهنية عالية الجودة التي تهدف إلى تطوير المهارات وبناء القدرات للأفراد والمؤسسات. نسعى لتحقيق التميز في كل ما نقدمه من خدمات.</p>
-                        </div>
-                    </div>
-                    <p style="margin-top: var(--space-4); color: var(--neutral-600);">
-                        Cairo for Arabic headlines and Tajawal for Arabic body text, ensuring cultural authenticity and excellent readability for Arabic communications.
-                    </p>
+                <div class="quarter-section">
+                    <h3>Initiative 12: VIGAC Team Enablement & Operational Go-Live</h3>
+                    <span class="initiative-domain">Deliver Services & Operations</span> <span class="initiative-company-tag">VIGAC</span>
+                    <ul>
+                        <li>Comprehensive Odoo training for VIGAC team (technical staff on Project/Timesheets, sales on CRM/Sales, admin on Invoicing/Accounting).</li>
+                        <li>Implement change management for VIGAC's new digital processes.</li>
+                        <li>"Go-Live" with Odoo for managing initial VIGAC validation projects. Provide hyper-care support for VIGAC team.</li>
+                        <li>Establish KPIs for VIGAC service delivery and set up Odoo dashboards for monitoring.</li>
+                        <li>Establish framework for ongoing optimization for both Valor and VIGAC operations.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="applications" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Brand Applications</h2>
-                <p class="section-description">
-                    Our brand elements come together in various applications, from digital interfaces to print materials, creating a cohesive and memorable brand experience.
-                </p>
-            </div>
-
-            <div class="applications-grid">
-                <div class="application-card">
-                    <div class="application-preview pattern-dots">
-                        <div style="text-align: center; color: var(--valor-primary);">
-                            <h4 style="margin: 0; font-size: var(--text-2xl);">VALOR</h4>
-                            <p style="margin: 0; font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.1em;">Training & Consulting</p>
-                        </div>
-                    </div>
-                    <div class="application-info">
-                        <h4 class="application-title">Dot Pattern Background</h4>
-                        <p class="application-description">Subtle dot patterns for presentations, business cards, and digital backgrounds that add texture without overwhelming content.</p>
-                    </div>
-                </div>
-
-                <div class="application-card">
-                    <div class="application-preview pattern-lines">
-                        <div style="text-align: center; color: var(--valor-primary);">
-                            <h4 style="margin: 0; font-size: var(--text-2xl);">VALOR</h4>
-                            <p style="margin: 0; font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.1em;">Training & Consulting</p>
-                        </div>
-                    </div>
-                    <div class="application-info">
-                        <h4 class="application-title">Linear Pattern</h4>
-                        <p class="application-description">Dynamic line patterns for modern applications, perfect for website headers, brochures, and promotional materials.</p>
-                    </div>
-                </div>
-
-                <div class="application-card">
-                    <div class="application-preview pattern-gradient">
-                        <div style="text-align: center; color: var(--neutral-800);">
-                            <h4 style="margin: 0; font-size: var(--text-2xl);">VALOR</h4>
-                            <p style="margin: 0; font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.1em;">Training & Consulting</p>
-                        </div>
-                    </div>
-                    <div class="application-info">
-                        <h4 class="application-title">Gradient Background</h4>
-                        <p class="application-description">Elegant gradients for hero sections, banners, and premium applications that require sophisticated visual appeal.</p>
-                    </div>
-                </div>
-
-                <div class="application-card">
-                    <div class="application-preview pattern-mesh">
-                        <div style="text-align: center; color: var(--valor-primary);">
-                            <h4 style="margin: 0; font-size: var(--text-2xl);">VALOR</h4>
-                            <p style="margin: 0; font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.1em;">Training & Consulting</p>
-                        </div>
-                    </div>
-                    <div class="application-info">
-                        <h4 class="application-title">Mesh Gradient</h4>
-                        <p class="application-description">Modern mesh gradients for contemporary digital applications, creating depth and visual interest in web and mobile interfaces.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="footer">
+            <p>&copy; Valor Egypt & VIGAC Digital Transformation Strategy - Powered by Scando Method</p>
         </div>
-    </section>
-
-    <section id="voice" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Brand Voice & Personality</h2>
-                <p class="section-description">
-                    Our brand voice reflects our core values and mission, ensuring consistent communication that resonates with our audience and builds trust.
-                </p>
-            </div>
-
-            <div class="voice-principles">
-                <div class="voice-principle">
-                    <h4 class="voice-title">Professional Excellence</h4>
-                    <p class="voice-description">We communicate with authority and expertise, demonstrating our deep knowledge and commitment to delivering exceptional results in every interaction.</p>
-                </div>
-
-                <div class="voice-principle">
-                    <h4 class="voice-title">Empowering Growth</h4>
-                    <p class="voice-description">Our tone is supportive and encouraging, focusing on building confidence and fostering development in individuals and organizations.</p>
-                </div>
-
-                <div class="voice-principle">
-                    <h4 class="voice-title">Clear Communication</h4>
-                    <p class="voice-description">We speak plainly and directly, avoiding jargon and ensuring our message is accessible and easily understood by all audiences.</p>
-                </div>
-
-                <div class="voice-principle">
-                    <h4 class="voice-title">Innovation Focus</h4>
-                    <p class="voice-description">We embrace modern approaches and forward-thinking solutions, positioning ourselves as leaders in contemporary training and consulting methodologies.</p>
-                </div>
-
-                <div class="voice-principle">
-                    <h4 class="voice-title">Client-Centric Approach</h4>
-                    <p class="voice-description">Every communication prioritizes client needs and success, demonstrating our commitment to partnership and collaborative achievement.</p>
-                </div>
-
-                <div class="voice-principle">
-                    <h4 class="voice-title">Confident Leadership</h4>
-                    <p class="voice-description">True to our "Valor" name, we project strength and courage, inspiring confidence in our ability to tackle challenges and deliver results.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <img src="https://i.ibb.co/B5PY6w5N/valor-main-icon-dark-background.png" alt="Valor Logo" style="height: 40px;">
-            </div>
-            <div class="footer-text">
-                <p>&copy; 2025 Valor Training & Consulting. All Rights Reserved.</p>
-                <p>This brand identity system is proprietary and confidential. For authorized use only.</p>
-                <p>Last updated: May 2025 | Version 2.0</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Scroll progress indicator
-        function updateScrollProgress() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const progress = (scrollTop / scrollHeight) * 100;
-            document.getElementById('scrollProgress').style.width = progress + '%';
-        }
-
-        // Smooth scrolling for navigation links
-        function initSmoothScrolling() {
-            const navLinks = document.querySelectorAll('.nav-links a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        const offsetTop = targetElement.offsetTop - 80; // Account for fixed nav
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        }
-
-        // Initialize on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            initSmoothScrolling();
-            updateScrollProgress();
-        });
-
-        // Update scroll progress on scroll
-        window.addEventListener('scroll', updateScrollProgress);
-
-        // Add active state to navigation
-        function updateActiveNav() {
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (window.pageYOffset >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        }
-
-        window.addEventListener('scroll', updateActiveNav);
-    </script>
+    </div>
 </body>
 </html>
